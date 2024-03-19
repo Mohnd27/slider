@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--icon link-->
+    <link rel="stylesheet" href="src/icons/all.min.css" />
+    <!--my link-->
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="src/Playfair_Display_SC/PlayfairDisplaySC-Black.ttf"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="exit">x</span>
+      <ul class="sign-nav">
+        <li id="sign-in">sign in</li>
+        <li id="log-in">log in</li>
+      </ul>
+      <ul class="bar-nav">
+        <li>home</li>
+        <li class="active">character</li>
+        <li>search</li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="account">
+        <!--plus icon-->
+        <!--user icon-->
+        <span class="one">+</span>
+        <span class="two"><i class="fa-solid fa-user"></i></span>
+      </div>
+      <ul class="bar">
+        <li>home</li>
+        <li class="active">character</li>
+        <li>search</li>
+      </ul>
+      <ul class="sign">
+        <li id="sign-in">sign in</li>
+        <li id="log-in">log in</li>
+      </ul>
+      <div class="menu">
+        <div class="top"></div>
+        <div class="mid"></div>
+        <div class="bottom"></div>
+      </div>
+    </header>
+    <div class="chosen">
+      <img src="" class="char_image" alt="" />
+      <h3 id="anime" class="anime"></h3>
+      <div class="ch-text">
+        <h2 id="ch-name"></h2>
+        <p id="ch-info"></p>
+      </div>
+      <ul class="slides">
+        <li onclick="currentSlide(1)"></li>
+        <li onclick="currentSlide(2)"></li>
+        <li onclick="currentSlide(3)"></li>
+      </ul>
+      <div class="right" onclick="pushSlide(1)">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="left" onclick="pushSlide(-1)">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+    </div>
+    <main>
+      <section class="other_ch">
+        <h3 class="c_text">art work</h3>
+        <div class="box-wrapper">
+          <div class="box">
+            <img src="src/images/shinobo-1.jpg" alt="" class="box_img" />
+            <h4 class="box-name">shinobu</h4>
+          </div>
+          <div class="box">
+            <img src="src/images/shinobo-2.jpg" alt="" class="box_img" />
+            <h4 class="box-name">shinobu</h4>
+          </div>
+        </div>
+        <a href="" class="show_more">show more</a>
+      </section>
+      <section class="more_ch">
+        <h3 class="c_text">more characters</h3>
+        <div class="box-wrapper">
+          <div class="box extra">
+            <img src="src/images/c-vegeta-2.jpeg" alt="" class="box_img" />
+            <h4>shinobu</h4>
+            <span class="alert">nooo</span>
+          </div>
+          <div class="box extra">
+            <img src="src/images/c-lufy.jpeg" alt="" class="box_img" />
+            <h4>shinobu</h4>
+            <span class="alert">nooo</span>
+          </div>
+        </div>
+        <a href="" class="show_more">show more</a>
+      </section>
+      <section class="searched">
+        <h3 class="c_text">resent searched</h3>
+        <div class="searched_warpper">
+          <div class="search_box" style="background-color: #9de78c">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <p>uchiha itachi</p>
+          </div>
+          <div class="search_box" style="background-color: #b3b3b3">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <p>uchiha itachi</p>
+          </div>
+          <div class="search_box" style="background-color: #7b9cbb">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <p>son goku</p>
+          </div>
+          <div class="search_box" style="background-color: #da8686">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <p>chisato</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="src/index.js"></script>
+    <script src="src/icons/all.min.js"></script>
+  </body>
+</html>
