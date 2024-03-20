@@ -536,6 +536,9 @@ searched section
     right: -40px;
   }
 }
+/*
+small screens
+*/
 
 @media (max-width: 550px) {
   body {
