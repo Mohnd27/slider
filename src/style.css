@@ -545,7 +545,7 @@ searched section
     overflow: hidden;
   }
   .chosen {
-    max-height: 350px;
+    height: 381px;
   }
   .anime {
     text-align: center;
